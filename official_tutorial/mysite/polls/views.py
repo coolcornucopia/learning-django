@@ -7,7 +7,8 @@ from .models import Choice, Question
 
 
 class IndexView(generic.ListView):
-    template_name = "polls/index.html"
+    #template_name = "polls/index.html"
+    # by default, template_name = "polls/question_list.html" # <app name>/<model name>_list.html
     context_object_name = "latest_question_list"
 
     def get_queryset(self):
@@ -17,11 +18,13 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template_name = "polls/detail.html"
+    #template_name = "polls/detail.html"
+    # by default, template_name = "polls/question_detail.html" # <app name>/<model name>_detail.html
 
 
 class ResultsView(generic.DetailView):
     model = Question
+    # Here below we keep results.html because we already have a question_detail.html file above
     template_name = "polls/results.html"
 
 
