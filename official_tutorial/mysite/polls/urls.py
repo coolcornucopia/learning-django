@@ -2,7 +2,7 @@ from django.urls import path
 
 from . import views
 
-app_name = "polls"
+app_name = "polls" # then use 'polls:details' in html template files
 urlpatterns = [
     # ex: /polls/
     path("", views.IndexView.as_view(), name="index"),
