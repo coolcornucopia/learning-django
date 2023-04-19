@@ -2,7 +2,8 @@
 Various projects and apps used to learn the fantastic Django...
 
 ## official_tutorial
-This is the official tutorial source code starting from https://docs.djangoproject.com/en/4.2/intro/tutorial01/ based on Django version 4.2.
+This directory contains the official tutorial source code starting from https://docs.djangoproject.com/en/4.2/intro/tutorial01/ based on Django version 4.2.
+You can follow commits one by one to better identify each part of the tutorial.
 
 Installation of Django
 ```bash
