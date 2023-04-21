@@ -20,3 +20,17 @@ python -m django --version
 
 # Now your Python env is ready for playing with Django :-)
 ```
+
+## my1stcms
+This directory contains a test of the wagtail Django content management system (CMS).
+
+The first commit simply follow the default installation instructions (read https://github.com/wagtail/wagtail for details):
+```bash
+pip install wagtail
+wagtail start mysite
+cd mysite
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+```
